@@ -1,7 +1,12 @@
 import styles from '../styles/Navbar.module.scss';
-import{useState} from 'react';
+import {useState} from 'react';
 
-export default function Navbar  (props)  {
+interface NavbarProps {
+    devLogo: string,
+    profileImage: string
+}
+
+export default function Navbar (props: NavbarProps)  {
 
     const [homeActive, setHomeActive] = useState(false);
     const [playActive, setPlayActive] = useState(false);
@@ -9,7 +14,7 @@ export default function Navbar  (props)  {
     const [groupsActive, setGroupsActive] = useState(false);
     const [gamesActive, setGamesActive] = useState(false);
 
-    function handleClick(val) {
+    function handleClick(val: string) {
         if(val === 'homeIcon'){
             setHomeActive(current => !current);
         };

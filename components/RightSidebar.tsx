@@ -1,6 +1,10 @@
 import styles from '../styles/Home.module.scss';
 
-export default function RightSidebar(props){
+interface RightSidebarProps{
+    
+}
+
+export default function RightSidebar(){
 
     return (
         <section className={`${styles.rightSidebar}`}>

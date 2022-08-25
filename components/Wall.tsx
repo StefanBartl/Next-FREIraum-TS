@@ -1,6 +1,10 @@
 import styles from '../styles/Home.module.scss';
 
-export default function Wall  (props) {
+interface WallProps {
+  profileImage: string,
+}
+
+export default function Wall  (props: WallProps) {
 
 function TestFunktion (){
 

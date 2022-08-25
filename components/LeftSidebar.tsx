@@ -1,13 +1,11 @@
 import styles from '../styles/Home.module.scss';
 
-export default function LeftSidebar (props) {
+export default function LeftSidebar () {
 
-    return (
-        <>
+    return (     
             <section className={`${styles.leftSidebar}`}>
 
                 <div className={`${styles.leftSidebarFirstSection}`}>
-                    <h2>{props.hm}</h2>
                     <a href='#'>Profilname</a>
                     <a href='#'>Freunde</a>
                     <a href='#'>Gruppen</a>
@@ -24,9 +22,6 @@ export default function LeftSidebar (props) {
                     <a href='#'>Favprofil</a>
                 </div>
 
-            </section>
-        </>
-
+            </section>      
     )
 };
-
