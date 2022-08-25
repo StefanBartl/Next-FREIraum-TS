@@ -1,0 +1,29 @@
+@forward 'LeftSidebar';
+@forward 'Wall';
+@forward 'RightSidebar';
+
+$text-optimal-width: clamp(45ch, 50%, 75ch);
+$fs-400: 1rem;
+$fs-500: 1.125rem;
+$fs-600: 1.375rem;
+$fs-700: 2rem;
+
+$fbBlue: #1B74E4;
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 5rem;
+  grid-template-areas: 
+    "main main main"
+    "footer footer footer footer";
+
+  padding-top: 1rem;
+  gap: 1rem;
+
+  > * {
+    outline: solid 1px grey;
+  }
+}
+
+
