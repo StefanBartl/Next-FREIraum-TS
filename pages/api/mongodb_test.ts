@@ -1,6 +1,6 @@
+import { NextApiRequest, NextApiResponse } from 'next'
 import { v4 as uuidv4 } from 'uuid';
 import clientPromise from '../../lib/mongodb';
-import { NextApiRequest, NextApiResponse } from 'next'
 
 const   MONGODB_DB = process.env.DATABASE_ALPHA as string, 
         MONGODB_COLLECTION_USERS = process.env.COLLECTION_USERS as string;   
